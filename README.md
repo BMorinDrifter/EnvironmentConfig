@@ -12,14 +12,16 @@ Usage (General)
 EnvironmentConfig loads settings into your Game.ini configuration set via 3 files per
 environment
 
-Game\Config\Environment\<EnvironmentName>\Client.ini
-Game\Config\Environment\<EnvironmentName>\Common.ini
-Game\Config\Environment\<EnvironmentName>\Server.ini
+`Game\Config\Environment\<EnvironmentName>\Client.ini`
 
-All build targets load Common.ini
-Dedicated Game Servers load Server.ini
-All other targets load Client.ini
-The Unreal Editor loads both with priority to Server.ini
+`Game\Config\Environment\<EnvironmentName>\Common.ini`
+
+`Game\Config\Environment\<EnvironmentName>\Server.ini`
+
+- All build targets load Common.ini
+- Dedicated Game Servers load Server.ini
+- All other targets load Client.ini
+- The Unreal Editor loads both with priority to Server.ini
 
 **EnvironmentConfig is not indended for storing any secrects or keys**
 
@@ -29,7 +31,7 @@ The default environment is Integration.  Pass Env=<EnvironmentName> on the
 command line to use a different environment.
 
 Epic Launcher does not have a way to modify the command line for different 
-environments, instead passes epicsandboxid on the command line and you will
+environments, instead it passes epicsandboxid on the command line and you will
 need to map that into an environment.
 
 Usage (Server)
